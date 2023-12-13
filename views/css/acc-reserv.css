@@ -1,0 +1,70 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* MAIN CSS */
+.upper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 10% 0 10%;
+}
+
+
+/* BREADCRUMBS CSS */
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* HEADER CSS */
+.acc-header{
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.acc-header h1{
+    margin: 20px 0 60px 0;
+}
+
+.acc-subheader h1{
+    font-size: 2.5rem;
+}
+
+.acc-subheader p{
+    font-size: 1.8rem;
+    margin: 10px 0 0 0;
+}

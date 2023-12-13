@@ -1,0 +1,599 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea{
+    resize: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.focus{
+    margin: 0;
+    background-color: darkred;
+}
+
+
+/* BANNER CSS */
+.checkout-banner{
+    display: flex;
+    background-image: url('../img/checkout-page/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    background-position: 0 -50px;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0 0 0;
+}
+
+.checkout-banner h2{
+    font-size: 2.5rem;
+}
+
+/* MAIN CSS */
+main{
+    background-color: white;
+    padding: 5%;
+    font-size: 1.1em;
+}
+
+@media screen and (min-width: 1043px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 60%;
+    }
+}
+
+
+
+/* BREADCRUMBS CSS */
+.breadcrumbs{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.breadcrumbs a{
+    color: #000;
+    font-weight: bold;
+}
+
+.breadcrumbs p{
+    color: #000;
+}
+
+.breadcrumbs-home-icon{
+    height: 40px;
+    margin: 0 5px 0 0;
+}
+
+.breadcrumbs-arrow{
+    margin: 0 3px 0 3px;
+}
+
+/* ITEM LIST CSS */
+.items-list{
+    height: fit-content;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ITEM BOX CSS */
+.item-box{
+    background-color: white;
+    display: flex;
+    position: relative;
+    height: 150px;
+    left: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 2px 5px rgb(142, 142, 142);
+}
+
+.item-box button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+    color: #718096;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px 1px 5px;
+}
+
+.item-box button:hover{
+    background-color: #718096;
+    color: #e2e8f0;
+}
+
+.item-box button:active{
+    background-color: white;
+    color: #718096;
+    outline: solid 1px;
+}
+
+.item-remove{
+    margin: 5px 5px 0 0;
+    background: none;
+    outline: none;
+    border: none;
+    background-image: url('../img/acc-m-assets/close-btn-unhover.png');
+    background-size: 100%;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+}
+
+.item-remove:hover{
+    cursor: pointer;
+    background-image: url('../img/acc-m-assets/close-btn-hover.png');
+}
+
+
+.item-desc{
+    display: flex;
+    flex-grow: 1;
+    padding: 20px 3% 20px 3%;
+    justify-content: space-between;
+}
+
+.item-desc-right{
+    display: flex;
+    padding: 10px 3% 10px 0;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
+.item-desc-right>p{
+    position: relative;
+    margin: 0;
+}
+
+.item-date{
+    color: #acacac;
+}
+
+.item-price{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.item-price>div>p{
+    font-weight: bold;
+}
+
+.item-price-num{
+    font-weight: bold;
+}
+
+.item-desc-left{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+}
+
+.item-desc-left h1{
+    display: flex;
+    position: relative;
+    margin: 2px 0 2px 0;
+    top: 0;
+}
+
+.item-desc-left p{
+    display: flex;
+    position: relative;
+    top: 0;
+    margin: 0;
+}
+
+    /* ITEM AMM BOX CSS */
+    .item-amm-box{
+        display: flex;
+        height: 20px;
+        width: 50%;
+        position: relative;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .item-amm-box button{
+        display: flex;
+        height: 20px;
+        
+    }
+
+    .item-amm{
+        display: flex;
+        height: auto;
+        margin: 0 5px 0 5px !important;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: 150px;
+    padding: 50px 10px 50px 10px;
+}
+
+.image-container-inner{
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 2px black;
+    height: 110px;
+    width: 110px;
+    overflow: hidden;
+}
+
+.image-container img{
+    position: relative;
+    left: 0px;
+    width: 140px;
+    object-fit: cover;
+}
+
+
+input[type="checkbox"] {
+    width: 20px; /* Set the width */
+    height: 20px; /* Set the height */
+    accent-color: rgb(71, 71, 71);
+  }
+
+.checkbox-container input[type="checkbox"]{
+    position: relative;
+    right: -7px;
+}
+  
+
+
+/* BILLING ADDRESS CSS */
+
+.billing-addr{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 4px rgb(104, 104, 104);
+    margin: 5% 0 5% 0; 
+    padding: 2% 5% 2% 5%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.billing-addr div{
+    
+    display: flex;
+}
+
+.billing-addr input[type="text"], .billing-addr input[type=email], .billing-addr input[type="tel"]{
+    display: flex !important;
+    flex-grow: 1 !important;
+    height: 40px !important;
+    border-style: none !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+    padding: 6px 10px 2px 20px !important;
+    background-color: white !important;
+    box-shadow: 0 0 3px rgb(104, 104, 104);
+    font-size: 1.02rem !important;
+    font-weight: bold !important;
+    width: auto !important;
+    color: #606060 !important;
+}
+
+    /* BILLING NAME */
+    .billing-name{
+        margin: 20px 0 40px 0;
+        position: relative;
+    }
+
+    label[for=firstname]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 1.7%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    .billing-firstname{
+        margin: 0 20px 0 0
+    }
+
+    label[for=lastname]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 54.5%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    .billing-lastname{
+        margin: 0 0 0 20px
+    }
+
+    /* BILLING EMAIL */
+    .billing-email-container{
+        position: relative;
+        margin: 0 0 40px 0;
+    }
+
+    label[for=emailaddr]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 1.7%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    /* BILLING ADDR1 */
+    .billing-addr1-container{
+        margin: 0 0 25px 0;
+        position: relative;
+    }
+
+    label[for=straddr-1]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 1.7%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    /* BILLING ADDR2 */
+    .billing-addr2-container{
+        margin: 0 0 40px 0;
+    }
+
+    /* BILLING STATE-CITY */
+    .state-city{
+        margin: 0 0 40px 0;
+        position: relative;
+    }
+
+    label[for=state]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 1.7%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+    .billing-state{
+        margin: 0 20px 0 0
+    }
+
+    label[for=city]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 54.5%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    .billing-city{
+        margin: 0 0 0 20px
+    }
+
+    /* BILLING ZIP-PHONE */
+    .zip-phone{
+        position: relative;
+    }
+
+    label[for=zip]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 1.7%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    .billing-zip{
+        margin: 0 20px 0 0
+    }
+
+    label[for=phone]{
+        position: absolute;
+        color: #818181;
+        top: -20px;
+        left: 54.5%;
+        padding: 5px 10px 5px 10px;
+        background-color: white;
+    }
+
+    .billing-phone{
+        margin: 0 0 0 20px
+    }
+
+.billing-addr ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.billing-addr ul>li{
+    display: flex;
+    align-items: center;
+    line-height: 5px !important;
+    margin: 20px 0 10px 0 !important;
+}
+
+.billing-addr ul>li>input[type=checkbox]{
+    margin: 0 10px 0 0;
+}
+
+/* PAYMENT METHOD CSS */
+.payment-method{
+    display: flex;
+    position: relative;
+}
+
+label[for=payment-select]{
+    position: absolute;
+    color: #818181;
+    top: -20px;
+    left: 1.7%;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+}
+
+.payment-method select{
+    display: flex;
+    flex-grow: 1;
+    height: 50px;
+    border-style: none;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 6px 10px 4px 10px;
+    box-shadow: 0 0 3px rgb(104, 104, 104);
+    font-size: 1.02rem;
+    font-weight: bold;
+    color: #606060;
+}
+
+/* PAYMENT SUM END */
+
+.payment-summ{
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0 5% 0; 
+        padding: 2% 5% 2% 5%;
+        border-radius: 8px;
+        overflow: hidden;
+}
+
+.payment-count{
+    height: 150px;
+}
+
+td[class$='val']{
+    font-weight: bold;
+}
+
+.line{
+    height:1.5px;
+    background-color: rgb(218, 218, 218);
+    margin: 10px 0 20px 0;
+}
+
+table.grand-total{
+    margin: 0 0 40px 0;
+}
+
+.grand-total-label{
+    font-weight: bold;
+}
+
+.grand-total-val{
+    font-weight: bold;
+    color: red;
+}
+
+label[for=payment-notes]{
+    position: absolute;
+    color: #818181;
+    top: -20px;
+    left: 1.7%;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+}
+
+.payment-notes-container{
+    position: relative;
+    display: flex;
+}
+
+textarea.payment-notes{
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+    color: #616161;
+    padding: 20px 15px 15px 15px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 3px rgb(104, 104, 104);
+
+}
+
+.privacy-terms{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0 !important;
+}
+
+.privacy-terms-text{
+    margin: 0 0 0 10px;
+}
+
+/* SUBMIT SECTION */
+
+.submit-container{
+    display: flex;
+}
+
+.submit-container input[type=submit]{
+    display: flex;
+    flex-grow: 1;
+    padding: 15px 0 15px 0;
+    justify-content: center;
+    font-size: 1.05em;
+    font-weight: bold;
+    color: white;
+    background-color: gradient();
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(104, 104, 104);
+    background: linear-gradient(150deg, #65774d, #4a4f33);
+}
+
+.submit-container input[type=submit]:hover{
+    outline: 2px solid #4a4f33;
+    background: white;
+    color: #4a4f33;
+}
+

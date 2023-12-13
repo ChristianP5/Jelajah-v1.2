@@ -1,0 +1,178 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* BREADCRUMBS CSS */
+
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 100px;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+/* HEADER CSS */
+.acc-header{
+    display: flex;
+    padding: 0px 0 5px 100px;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0 0 20px 0;
+}
+
+.acc-header h1{
+    margin: 0;
+}
+
+/* MAIN CSS */
+
+main{
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.levels-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.levels-box-titles-sect{
+    position: absolute;
+    color: white;
+    padding: 20px;
+}
+
+.levels-box-titles-sect>h1{
+    font-size: 1.3rem;
+}
+
+.levels-box-titles-sect>h2{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+    /* Image Box CSS */
+    .img-sect{
+        background-color: #697b51;
+        padding: 40px 0 0 0;
+    }
+
+    .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box>img{
+        width: 100%;
+    }
+
+/* Levels Explain CSS */
+.levels-explain{
+    color: rgb(0, 0, 0);
+    margin: 20px 0 0 0;
+
+}
+
+.levels-explain-title{
+    font-size: 0.7rem;
+}
+
+.levels-explain-title>h1{
+    margin: 0 0 5px 0;
+}
+
+.levels-explain-title>h2{
+    font-size: 0.5rem;
+    font-weight: 400;
+    margin: 5px 0 10px 0;
+}
+
+.levels-explain-title>img{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .levels-box-titles-sect{
+        padding: 50px 50px 0 50px;
+    }
+    
+    .levels-box-titles-sect>h1{
+        font-size: 1.8rem;
+    }
+    
+    .levels-box-titles-sect>h2{
+        font-size: 1.3rem;
+    }
+    
+    .levels-explain-title>h1{
+        font-size: 1rem;
+    }
+    .levels-explain-title>h2{
+        font-size: 0.8rem;
+        margin: 5px 0 15px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .acc-header{
+        margin: 0 0 40px 0;
+    }
+    
+    .levels-box-titles-sect{
+        padding: 100px 50px 0 50px;
+    }
+    
+    .levels-box-titles-sect>h1{
+        font-size: 2.5rem;
+    }
+    
+    .levels-box-titles-sect>h2{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    
+    
+    .levels-explain-title>h1{
+        font-size: 1.8rem;
+        margin: 40px 0 5px 0;
+    }
+    .levels-explain-title>h2{
+        font-size: 1.3rem;
+        margin: 5px 0 40px 0;
+    }
+}
+
+

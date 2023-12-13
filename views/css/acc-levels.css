@@ -1,0 +1,250 @@
+html{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* TITLE BOX CSS */
+
+.title-box{
+    width: 100%;
+    background-color: red;
+    height: 200px;
+}
+
+.levels-titles{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    width: 100%;
+    align-self: flex-start;
+    color: white;
+    padding: 50px;
+}
+
+.levels-title{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.levels-subtitle{
+    font-size: 1.5rem;
+}
+
+
+/*  */
+
+.custom-green-rectangle {
+    width: 1050px;
+    height: 451px;
+    background-color: #697B51;
+    position: relative;
+}
+
+.center-line {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    height: 6px;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.circle-left {
+    left: 50px;
+    width: 64px;
+    height: 64px;
+    z-index: 2;
+}
+
+.circle-right {
+    right: 50px;
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #972D20;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.circle-middle1 { left: 250px; }
+.circle-middle2 { left: 400px; }
+.circle-middle3 { left: 570px; }
+.circle-middle4 { left: 750px; z-index: 2; }
+
+.small-red-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #972D20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 57px;
+    z-index: 4;
+}
+
+.small-red-circle-right {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #972D20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 57px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.small-red-circle-center {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #972D20;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.svg-icon {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    z-index: 6;
+    fill: #fff;
+}
+
+.small-red-circle-right { z-index: 4; }
+
+.letter-n {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 73px;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.level-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    left: 56px;
+    top: 270px;
+    z-index: 5;
+}
+
+.level2-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    right: 56px;
+    top: 270px;
+    z-index: 5;
+}
+
+.heading-text {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 52px;
+    position: absolute;
+    top: 20px;
+    left: 53px;
+    z-index: 5;
+}
+
+.subtext {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    position: absolute;
+    top: 68px;
+    left: 53px;
+    z-index: 5;
+}
+
+.small-gray-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    z-index: 5;
+}
+
+.penjelajah-info {
+    position: absolute;
+    left: 50%;
+    transform: translate(-82%, -70%);
+    text-align: center;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 52px;
+    top: 60%;
+    white-space: nowrap;
+}
+
+.progress-info {
+    position: absolute;
+    left: 50%;
+    transform: translate(-55.5%, calc(-70% - 20px));
+    text-align: center;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 52px;
+    top: 40%;
+    white-space: nowrap;
+}
+
+.w-628 { width: 628px; }
+.h-331 { height: 331px; }
+.enlarge-image { transform: scale(1.7); }

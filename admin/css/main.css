@@ -1,0 +1,182 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+textarea{
+    resize: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* HEADER CSS */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header ul>li{
+    margin: 20px 10px 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+header ul>li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-home{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header ul>li a:hover{
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+}
+
+/* MAIN CONTENT CSS */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.counter{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.counter div{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgb(182, 182, 182);
+}
+
+.counter div h1{
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+/* FOOTER CSS */
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Presets */
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.bm-100{
+    margin-bottom: 100px;
+}
+
+.w-50{
+    width: 50%;
+}
+.row-m{
+    line-height: 30px;
+}
+
+.o-x{
+    overflow-x: scroll;
+}
+
+
+.button-green{
+    background-color: green;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.add-user-btn{
+ width: 10%;
+ text-align: center;
+ margin: 20px auto 20px auto;
+}
+
+.button-green:hover{
+    background-color: rgb(2, 149, 2);
+    color: white;
+}
+
+.button-red{
+    background-color: rgb(97, 0, 0);
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+
+.button-red:hover{
+    background-color: rgb(137, 0, 0);
+    color: white;
+}
+
+.o-x::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+    background-color: #000000; /* Set the background color of the scrollbar */
+    position: absolute;
+    left: 0; /* Position the scrollbar on the left of the element */
+ }

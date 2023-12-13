@@ -1,0 +1,215 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* UPPER CSS */
+.upper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 10% 0 10%;
+}
+
+/* BREADCRUMBS CSS */
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* HEADER CSS */
+.acc-header{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.acc-header h1{
+    margin: 20px 0 20px 0;
+}
+
+.acc-header p{
+    margin: 20px 0 20px 0;
+    font-size: 1.4rem;
+}
+
+/* ITEM LIST CSS */
+.w-list{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 50px auto;
+}
+
+    /* ITEM BOX CSS */
+    .w-item{
+        background-color: rgb(255, 255, 255);
+        margin: 10px 0 10px 0;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgb(164, 164, 164);
+    }
+
+        /* IMG SECTION CSS */
+        .w-img-sect{
+            display: flex;
+            justify-content: center;
+            width: 30%;
+        }
+
+        .img-box{
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 20px;
+            width: 80%;
+            margin: 10px;
+        }
+
+        .img-box img{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* DESC SECTION CSS */
+        .w-desc-sect{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 0 0 10px;
+        }
+
+        .w-desc-sect h1, .w-desc-sect p{
+            line-height: 30px;
+        }
+
+        .w-desc-sect>h1{
+            font-size: 1.3rem;
+        }
+
+        .w-desc-sect>p{
+            font-size: 0.7rem;
+        }
+
+.h-summ{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 80px auto;
+    font-size: 1.2rem;
+}
+.h-summ>p{
+    margin: 0 0 10px 20px;
+}
+.summ-box{
+    display: flex;
+    background-color: #697b51;
+    color: white;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 20px 50px 10px;
+    border-radius: 10px;
+}
+
+.summ-amm-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin: 0 0 0 20px;
+    border-radius: 8px;
+    border: solid 1px black;
+}
+
+.summ-amm{
+    border: solid 1px black;
+    color: rgb(156, 154, 154);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1000px) {
+    .img-box{
+        margin: 20px;
+    }
+
+    .w-desc-sect h1, .w-desc-sect p{
+        line-height: 80px;
+    }
+
+    .w-desc-sect h1{
+        font-size: 2.7rem;
+    }
+
+    .w-desc-sect p{
+        font-size: 1.4rem;
+    }
+
+    .h-summ>p{
+        font-size: 1.8rem;
+        margin: 0 0 30px 20px;
+    }
+
+    .summ-box{
+        padding: 100px 40px 100px 10px;
+    }
+
+    .summ-box>p{
+        font-size: 1.8rem;
+    }
+    
+    .summ-amm-box{
+        padding: 30px;
+        margin: 0 0 0 50px;
+    }
+
+    .summ-amm{
+        padding: 20px;
+    }
+    
+    .summ-amm>p{
+        font-size: 1.8rem;
+    }
+}

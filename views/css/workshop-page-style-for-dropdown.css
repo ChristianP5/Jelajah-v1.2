@@ -1,0 +1,663 @@
+body, header{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    width: 100%
+      
+}
+
+
+.head{
+
+    background-color: white;
+    width: 100%;
+    font-size: 200%;
+    font-weight:300;
+    /* position: fixed; */
+    z-index: 1000;
+
+}
+
+.head h1{
+    position:relative;
+    left: 110px;
+    font-weight: bold;
+}
+
+.head h1 a{
+    text-decoration: none;
+    color: #902B1E;
+}
+
+.head p a{
+    text-decoration: none;
+    color:black;
+
+}
+
+.head p{
+
+    background-color: white;
+    color: black;
+    display: inline;
+    margin: 35px;
+    position: relative;
+    left: 830px;
+    bottom:95px;
+    font-weight: 500;
+    font-size: 80%;
+}
+
+.header{
+    text-align: center;
+    /* outline: 1px;
+    outline-style: solid; */
+    font-size: 20px;
+    padding: 50px;
+    line-height: 35px;
+    height: 200px;
+    background-color: #383B28;
+
+}
+
+
+
+.header h1{
+    color: white;
+    font-size: 280%;
+    font-weight: 500;
+
+}
+
+.header p{
+    font-size: 120%;
+    color: white;
+
+}
+
+.batchCraft, .batchCook{
+    display: flex;
+    overflow-x: scroll;
+    /* width: 1290px; */
+    gap: 120px;
+    
+    
+}
+
+.batchReview{
+    display: flex;
+    overflow-x: scroll;
+    gap: 120px;
+    
+}
+
+.batchCraft::-webkit-scrollbar, .batchCook::-webkit-scrollbar, .batchReview::-webkit-scrollbar{
+    display: none;
+}
+
+.review-title h1{
+    position: relative;
+    top: 80px;
+
+}
+
+.crafting-title h1{
+    margin-bottom: -180px;
+    /* display: flex;
+    justify-content: center; */
+    position: relative;
+    top: -200px;
+    bottom: 100px;
+    /* margin-top : -100px; */
+    
+}
+
+.cooking-title h1{
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.search-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    justify-content: center; 
+}
+
+
+input[type="date"] {
+    background-color: white;
+}
+
+#whenButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 200%;
+
+}
+
+.dropdown-trigger3 a{
+    position: relative;
+    right: 70px;
+}
+
+
+input[type="text"] {
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 50px;
+    
+}
+
+.dropdowns {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    background-color: white;
+    width: 650px;
+    height: 90px;
+    box-sizing: border-box; 
+    position: relative;
+    left: 450px;
+    bottom:40px;
+    box-shadow: 0px 5px 10px #888888;
+    /* display: inline-block; */  
+}   
+
+
+.dropdowns p{
+    display: inline;
+    position: relative;
+    left: 36px;
+    top: -1px;
+}
+
+.dropdowns p a{
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+}
+
+#dropdownContent.active, #dropdownContent3.active {
+    display: block;
+}
+
+.dropdown-content  {
+    width: 180px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content3 {
+    width: 360px;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 270px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li, .dropdown-content3 li {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover, .dropdown-content3 li:hover {
+    background-color: #ddd;
+}
+
+#calendarDropdown{
+    position: relative;
+    left: 1000px;
+    
+}
+
+
+
+
+.line1{
+    width: 1.5px;
+    height: 60px;
+    background-color: #ACACAC;
+    position: relative;
+    left: 600px;
+    bottom:180px;
+    z-index: 1;
+}
+
+.line2{
+    width: 1.5px;
+    height: 60px;
+    background-color: #ACACAC;
+    position: relative;
+    left: 720px;
+    bottom: 240px;
+    z-index: 1;
+
+}
+
+.search{
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    
+
+}
+
+.search-overlay{
+    position: relative;
+    top: -100px;
+}
+
+::placeholder{
+    color: black;
+    font-size: 20px;
+}
+
+.search-button{
+    width: 60px;
+    position: relative;
+    z-index: 1;
+    left: 1010px;
+    bottom: 120px;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.button-review{
+    position: relative;
+    
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* outline : 1px;
+    outline-style: solid; */
+    text-align: center;
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: -150px;
+    padding: 40px;
+    
+
+}
+
+#datepicker-container {
+    position: relative;
+    display: inline-block;
+    right: 80px;
+  }
+
+  #datepicker{
+      position: relative;
+      left: 110px;
+      top: 20px;
+      width: 75px;
+      height: 1px;
+      background-color: white;
+  }
+
+.container h1{
+    margin-top: 0px;
+    
+}
+
+.left-arrow-review, .right-arrow-review, .left-arrow-crafting, .right-arrow-crafting, .left-arrow-cooking, .right-arrow-cooking{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.left-arrow-crafting{
+    position: relative;
+    top: 550px;
+    left: -620px;
+    z-index: 1;
+}
+
+.right-arrow-crafting{
+    position: relative;
+    top: 495px;
+    right: -620px;
+    z-index: 1;
+}
+
+#leftReview, #rightReview, #leftCrafting, #rightCrafting, #leftCooking, #rightCooking{
+    width: 50px;
+}
+
+.left-arrow-review{
+    position: relative;
+    left: -490px;
+    top: 580px;
+    z-index: 999;
+}
+
+.right-arrow-review{
+    position: relative;
+    left: 540px;
+    top: 520px;
+    z-index: 999;
+}
+
+
+.left-arrow-cooking{
+    position: relative;
+    top: 1325px;
+    left: -620px;
+    z-index: 1;
+}
+
+.right-arrow-cooking{
+    position: relative;
+    top: 1270px;
+    right: -620px;
+    z-index: 1;
+}
+
+
+.craft, .cook{
+    justify-content: center;
+    margin: 0 35px 30px 35px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(1, auto); 
+    gap: 10px;
+    width: 100%;
+    
+   
+}
+
+
+
+.craft-item button, .cook-item button{
+    /* opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; */
+    margin: 0 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 400px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    /* transition: transform 0.3s ease-in; */
+    
+}
+
+
+.craft-item img, .cook-item img{
+    transition: filter 0.3s ease-in;
+
+}
+
+
+.craft-item img:hover, .cook-item img:hover {
+    filter: brightness(80%);
+
+}
+
+.label {
+    background-color: #697B51;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    bottom: -10px;
+   
+    
+}
+
+
+.label h1{
+    font-size: 110%;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;;
+    
+}
+
+
+.desc{
+    font-size: 110%;
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 30px;
+    position: relative;
+    top: -15px;
+}
+
+.desc p {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-content {
+    order: 1; 
+    color: #E1E5DC;
+}
+
+.right-content {
+    order: 2; 
+    padding-right: 10px;
+    color: #E1E5DC;
+
+}
+
+
+.workshop-img{
+    width: 450px;
+    height: 250px;
+
+}
+
+.star-icon{
+    position: relative;
+    top: 50px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.button-review:hover{
+    transition: filter 0.3s ease-in;
+    filter: brightness(90%)
+}
+
+.reviews{
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    margin: 0 35px 30px 35px;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    width: 100%;
+}
+
+
+.reviews button{
+    margin: 0 10px;
+    margin-bottom: 100px;
+    padding: 0;
+    width: 900px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    /* transition: transform 0.3s ease-in; */
+    
+}
+
+#batik-review, #nasiuduk-review, #pottery-review {
+    position: absolute;
+    left:7px;   
+    top: 10px;
+    width: 180px;
+    height: 180px;
+    z-index: 1;
+}
+
+.label-review {
+    background-color: #697B51;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: -10px;
+    bottom: -1  0px;
+    
+   
+}
+
+.star{
+    position: relative;
+    left: 225px;
+}
+
+.workshop-name, .review-desc{
+   position: relative;
+   left: 250px;
+   line-height: 1;
+}
+
+
+.review-desc{
+    position: relative;
+    left: 219px;
+}
+
+.rating{
+    position: relative;
+   left: 240px;
+   top: -5px;
+   line-height: 1;
+   font-size: 150%;
+   
+}
+
+.rating p{
+    color: #B4BDA8;
+}
+
+.label-review h1{
+    position: relative;
+    top: 50px;
+    color: white;
+    
+}
+
+.label-review h1{
+    position: relative;
+    left: 225px;
+    text-align: left;
+}
+
+
+.label-review p{
+    color: white;
+
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer h1{
+    color: black;
+    font-weight: 500;
+    
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.socials{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 5px;
+}
+
+.socmed{
+    width: 30px;
+    height: 30px;
+}
+
+.socmed:hover{
+    cursor: pointer;
+}
+
+.rating{
+    top: 10px;
+    
+}
+
+.rating p{
+    color: #B4BDA8;
+}
+

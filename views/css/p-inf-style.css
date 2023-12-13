@@ -1,0 +1,207 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* MAIN CSS */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.left-half{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 20px 30px 0 100px;
+}
+
+.right-half{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+
+/* BREADCRUMBS CSS */
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* HEADER CSS */
+.acc-header{
+    display: flex;
+    font-size: 2rem;
+    line-height: 10px;
+}
+
+.acc-header h1{
+    margin: 10px 0 60px 0;
+}
+
+/* TABLE CSS */
+th, td{
+    border-bottom: 1px solid black;
+}
+td{
+    position: relative;
+    line-height: 20px;
+    font-size: 1.5rem;
+}
+
+div[class$="col"]{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+
+div[class$="col"] label{
+    font-weight: bold;
+}
+
+select{
+    margin: 10px 0 0 0;
+    font-size: 1.5rem;
+    padding: 5px 0 5px 0;
+    border: none;
+    background: none;
+}
+
+div[class$="col"] input:focus{
+    outline: none;
+}
+
+.first-column{
+    width: 100%;
+    height: 50px;
+}
+
+td button{
+    width: 60px;;
+    margin: 0 0 0 20px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(179, 179, 179);
+}
+
+/* IMAGE CSS */
+
+.image-box{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: 5%;
+    box-shadow: 0 0 3px gray;
+}
+
+
+
+#imagePreview{
+    position: relative;
+    height: 300px;
+}
+
+#hoverPreview{
+    display: none;
+    position: absolute;
+    width: 100%;
+    opacity: 0.6;
+}
+
+
+
+.image-box:hover #hoverPreview{
+    display: block;
+    cursor: pointer;
+}
+
+#fileInput{
+    display: none;
+}
+
+/* RIGHT HALF TEXT NAME */
+.right-half h1{
+    margin: 40px 0 0 0;
+    font-size: 2rem;
+}
+
+.right-half h2{
+    margin: 5px 0 0 0;
+    color: #450000;
+    font-size: 1.6rem;
+}
+
+
+@media screen and (max-width: 1180px) {
+    .image-box{
+        margin: 100px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        transform: 5%;
+    }
+    
+    
+    
+    #imagePreview{
+        position: relative;
+        height: 100%;
+    }
+    
+    #hoverPreview{
+        display: none;
+        position: absolute;
+        width: 100%;
+        opacity: 0.6;
+    }
+
+    /* RIGHT HALF TEXT NAME */
+    .right-half h1{
+        margin: 20px 0 0 0;
+        font-size: 1.3rem;
+    }
+}

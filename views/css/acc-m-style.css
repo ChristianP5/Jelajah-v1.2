@@ -1,0 +1,158 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* BREADCRUMBS CSS */
+
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 100px;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+/* HEADER CSS */
+.acc-header{
+    display: flex;
+    padding: 0px 0 5px 100px;
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.acc-header h1{
+    margin: 0;
+}
+
+/* BUTTONS CSS */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-self: center;
+    justify-content: space-between;
+    margin: 20px 100px 20px 100px
+}
+
+div[class$="box"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+    flex-grow: 1;
+    width: 340px;
+    height: 110px;
+    padding: 30px;
+    margin: 20px 0px 20px 0px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: solid #697b51 3px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+div[class$="box"]:hover{
+    background-color: #697b51;
+}
+
+div[class$="box"]>img{
+    width: 60px;
+    height: 60px;
+}
+
+div[class$="box"]>p{
+    line-height: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1414px){
+    body{
+        width: 60%;
+    }
+
+    .breadcrumbs{
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-size: 1.2rem;
+    }
+
+    /* HEADER CSS */
+    .acc-header{
+        display: flex;
+        padding: 0px 0 5px 0;
+        margin: 0;
+        font-size: 2rem;
+        line-height: 10px;
+    }
+
+    main{
+        width: 90%;
+    }
+    div[class$="box"]{
+        flex-grow: 1;
+        width: 300px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1351px){
+    body{
+        width: 60%;
+        align-items: center;
+    }
+
+    .breadcrumbs{
+        margin: 0;
+        padding: 20px 0 0 0;
+        font-size: 1.2rem;
+    }
+
+    /* HEADER CSS */
+    .acc-header{
+        display: flex;
+        margin: 0;
+        font-size: 2rem;
+        line-height: 10px;
+    }
+
+    main{
+        width: 90%;
+        justify-content: center;
+    }
+    div[class$="box"]{
+        flex-grow: 1;
+        width: 300px;
+    }
+
+    
+}

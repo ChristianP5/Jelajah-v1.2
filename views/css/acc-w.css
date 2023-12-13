@@ -1,0 +1,384 @@
+html{
+    font-size: 16px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.focus{
+    background-color: red;
+}
+
+/* For Removing input:number arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* UPPER CSS */
+.upper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 10% 0 10%;
+}
+
+
+/* BREADCRUMBS CSS */
+.breadcrumbs{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.breadcrumbs img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* HEADER CSS */
+.acc-header{
+    display: flex;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+.acc-header h1{
+    margin: 20px 0 60px 0;
+}
+
+/* Workshop Banner CSS */
+.w-banner{
+    background-color: #697b51;
+    padding: 50px 10% 50px 10%;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+/* MAIN CSS */
+
+main{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+
+    /* WISHLIST COUNTER CSS*/
+    .w-counter{
+        font-size: 2rem;
+        width: fit-content;
+        margin: 40px 0 40px 0;
+    }
+
+    /* WISHLIST LIST CSS*/
+    .w-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+        /* WISHLIST ITEM BOX CSS */
+        .w-item-box{
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin: 40px 0 40px 0;
+        }
+
+        input[type="checkbox"] {
+            width: 20px; /* Set the width */
+            height: 20px; /* Set the height */
+            accent-color: rgb(71, 71, 71);
+        }
+
+        .w-item-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15%;
+            margin: 0 20px 0 20px;
+        }
+        
+
+        .w-item-icon img{
+            width: 40px;
+            margin: 0 auto 0 auto;
+        }
+
+        .w-item-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1% 0 1% 0;
+        }
+
+        .w-item-img-box{
+            display: flex;
+            overflow: hidden;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border: #888888 solid;
+        }
+
+        .w-item-img-box img{
+            width: 100%;
+        }
+
+        .w-item-desc{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            padding: 10px 0 20px 3%;
+        }
+
+        .w-item-desc h1{
+            font-size: 1.2rem;
+            margin: 5px 0 0 0;
+        }
+
+        .w-item-desc h2{
+            font-size: 0.8rem;
+            margin: 0 0 5px 0;
+            color: #424242;
+        }
+
+        .w-item-counter{
+            display: flex;
+            height: 20px;
+            width: 50px;
+            position: relative;
+            padding: 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        .w-item-counter button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e2e8f0;
+            color: #718096;
+            border-radius: 5px;
+            border: none;
+            padding: 2px 10% 1px 10%;
+        }
+
+        .w-item-counter button{
+            display: flex;
+            height: 20px;
+        }
+        
+        .w-item-counter button:hover{
+            background-color: #718096;
+            color: #e2e8f0;
+        }
+        
+        .w-item-counter button:active{
+            background-color: white;
+            color: #718096;
+            outline: solid 1px;
+        }
+
+        .item-amm{
+            display: flex;
+            height: auto;
+            margin: 0;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        input.item-amm{
+            display: flex;
+            height: auto;
+            padding: 0;
+            border: none;
+            outline: none;
+            background: none;
+            text-align: center;
+            width: 20px;
+            margin: 0;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .w-item-price{
+            display: flex;
+            flex-grow: 1;
+            padding: 20px 40px 25px 0;
+            font-size: 1.7rem;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-weight: bold;
+        }
+
+
+
+        .popup-close-btn{
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            background: none;
+            outline: none;
+            border: none;
+            background-image: url('../img/acc-m-assets/close-btn-unhover.png');
+            background-size: 100%;
+            height: 20px;
+            width: 20px;
+            background-repeat: no-repeat;
+        }
+        
+        .popup-close-btn:hover{
+            cursor: pointer;
+            background-image: url('../img/acc-m-assets/close-btn-hover.png');
+            height: 20px;
+            width: 20px;
+            background-repeat: no-repeat;
+        }
+
+
+.reserve-now-btn-sect{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 0 50px 0;
+}
+
+.reserve-now-btn{
+    background-color: #697b51;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin: 0 20px 0 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.reserve-now-btn:hover{
+    background-color: #798e5d;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1300px){
+    main{
+        width: 80%;
+    }
+
+    .w-item-icon img{
+        width: 40%;
+    }
+
+    .w-item-desc h1{
+        font-size: 2rem;
+        margin: 0px 0 0px 0;
+    }
+
+    .w-item-desc h2{
+        font-size: 1.2rem;
+        margin: 5px 0 5px 0;
+    }
+
+    .w-item-counter{
+        width: 15%;
+        height: 40px;
+    }
+
+
+    .w-item-counter button{
+        display: flex;
+        font-size: 1.6rem;
+        height: 30px;
+        padding: 2px 10% 2px 10%;
+    }
+    
+    .w-item-counter button:hover{
+        background-color: #718096;
+        color: #e2e8f0;
+    }
+    
+    .w-item-counter button:active{
+        background-color: white;
+        color: #718096;
+        outline: solid 1px;
+    }
+
+    .item-amm{
+        display: flex;
+        height: auto;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    input.item-amm{
+        display: flex;
+        height: auto;
+        padding: 0;
+        border: none;
+        outline: none;
+        background: none;
+        text-align: center;
+        width: 40px;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .popup-close-btn{
+        background-size: 100%;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .popup-close-btn:hover{
+        height: 50px;
+        width: 50px;
+    }
+
+    .w-item-price{
+        display: flex;
+        flex-grow: 1;
+        font-size: 2.1rem;
+        padding: 20px 100px 20px 0;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+

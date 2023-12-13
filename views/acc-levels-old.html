@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pottery Workshop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../views/css/acc-levels.css" />
+  </head>
+  <body class="bg-white flex flex-col h-screen">
+    <section class="breadcrumbs"></section>
+
+    <div class="flex justify-start items-start px-6 mt-4">
+      <h1
+        class="your-points"
+        style="
+          color: var(--Dark-Green, #383b28);
+          font-family: Roboto;
+          font-size: 40px;
+          font-weight: 600;
+          line-height: 64px;
+        "
+      >
+        Your Points
+      </h1>
+    </div>
+
+    <div class="flex justify-center items-center title-box">
+      <div class="relative">
+        <div class="flex flex-col items-center custom-green-rectangle relative">
+          <div class="levels-titles">
+            <h1 class="levels-title">Name, you're at Penjelajah Level 1</h1>
+            <h2 class="levels-subtitle">
+              Complete 5 Workshops to unlock Penjelajah Level 2 travel rewards.
+            </h2>
+          </div>
+
+          <img
+            src="../views//img/acc-m-assets/acc-levels-assets/level1_1.png"
+            alt="Your Image"
+            class="w-1240 h-451 object-cover z-10"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="relative bg-gray-200 mt-10">
+      <span class="penjelajah-info mt-20"
+        >Discover levels for your Workshop rewards</span
+      >
+      <span class="progress-info mt-40"
+        >Each workshop you join counts toward your progress in the program. Once
+        unlocked, your discounts and workshop rewards are yours.</span
+      >
+    </div>
+
+    <div class="relative mt-72">
+      <div class="flex justify-center items-center relative">
+        <img
+          src="../views/img/acc-m-assets/acc-levels-assets/Level_Info.jpg"
+          alt="Level Info"
+          class="w-628 h-331 object-cover z-10 enlarge-image"
+        />
+      </div>
+    </div>
+  </body>
+</html>
